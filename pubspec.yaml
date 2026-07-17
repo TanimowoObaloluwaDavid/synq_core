@@ -1,0 +1,20 @@
+name: synq_core
+description: >
+  Offline-first CRDT sync engine for Flutter/Dart. Nested LWW-Map + RGA
+  document model, Hybrid Logical Clocks, causal op buffering, and a
+  storage-agnostic delta sync engine — for apps that must keep working (and
+  merging correctly) with no network.
+version: 0.1.0
+homepage: https://example.com/synq_core
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Deliberately zero third-party dependencies: this is pure Dart, so it works
+# identically in a Flutter app, a Dart CLI tool, or a server. Bring your own
+# storage/transport adapters (see SynqStorage) and network layer.
+dependencies:
+
+dev_dependencies:
+  test: ^1.24.0
+  lints: ^3.0.0
